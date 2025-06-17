@@ -1,5 +1,21 @@
+import Debug "mo:base/Debug";
+
 actor {
-  public query func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
+
+  var numero1 : Nat = 10;
+  var numero2 : Int = 20;
+  var texto : Text = "Meu primeiro Dapp";
+
+  public func somar(a : Nat, b : Nat) : async Nat {
+    return a + b;
   };
+
+  public func subtrair(a : Nat, b : Nat) : async Int {
+    return (a : Int) - (b : Int);
+  };
+
+  public func multiplicar(a : Nat, b : Nat) : async Nat {
+    return a * b;
+  };
+
 };
